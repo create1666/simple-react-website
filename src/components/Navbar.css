@@ -1,0 +1,49 @@
+:root {
+  --primary: #fff 
+}
+
+
+.navbar {
+  background: linear-gradient(
+    70deg,
+    rgb(25, 151, 173) 0%,
+    rgb(136, 27, 146) 100%
+  );
+  height: 80px;
+  position: sticky;
+  top: 0;
+  font-size: 1.2rem;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  background-color: palevioletred;
+  max-width: 1500px;
+}
+
+.navbar-logo-container{
+  display: flex;
+  align-items: center;
+  color: var(--primary);
+  margin-left: 0.5rem;
+  font-size: 1.8rem;
+  text-decoration: none;
+}
+.navbar-logo {
+  margin-right: 0.5rem;
+  
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+}
+
+.nav-item {
+  margin: 10px;
+}
