@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 import { FaEarlybirds, FaTimes, FaBars } from "react-icons/fa";
 import Button from "./Button";
 import "./Navbar.css";
-import "../App.css";
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
   const handleClickNavMenuIcon = () => setClick(!click);
+  const closeMenuHandler = () => setClick(false)
   const [button, setButton] = useState(true);
 
   useEffect(() => {
@@ -30,17 +30,18 @@ const Navbar = () => {
       <div className="navbar">
         <div className="navbar-container container">
           {/* flex-1 */}
-          <Link to="/" className="navbar-logo-container">
-            <FaEarlybirds className="navbar-logo" />
+          <Link to="/" className="navbar-logo" onClick={closeMenuHandler}>
+          <FaEarlybirds className="fa fa-Earlybirds" />
             CREATE1666
+           
           </Link>
           {/* flex-2 */}
-          <div className="navabr-icon" onClick={handleClickNavMenuIcon}>
-            {click ? <FaTimes /> : <FaBars />}
+          <div className="menu-icon" onClick={handleClickNavMenuIcon}>
+            {click ? <FaTimes className="fa-times"/> : <FaBars />}
           </div>
           {/* flex-3 */}{" "}
-          <div>
-            <ul className={click ? "nav-menu active" : "nav-menu"}>
+               <div>
+            <ul className={!click ? "nav-menu" :"nav-menu active" }>
               {/* ---children lists Starts here-- */}
               <li className="nav-item">
                 <Link to="/services" className="nav-links">
@@ -75,7 +76,7 @@ const Navbar = () => {
                 )}
               </li>
             </ul>
-          </div>
+            </div>
         </div>
       </div>
     </>
