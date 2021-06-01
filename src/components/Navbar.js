@@ -7,19 +7,20 @@ import "./Navbar.css";
 const Navbar = () => {
   const [click, setClick] = useState(false);
   const handleClickNavMenuIcon = () => setClick(!click);
-  const closeMenuHandler = () => setClick(false)
+  const closeMenuHandler = () => setClick(false);
   const [button, setButton] = useState(true);
 
-  useEffect(() => {
-    const showButton = () => {
-      if (window.innerWidth <= 960) {
-        setButton(false);
-      } else {
-        setButton(true);
-      }
-    };
+  const showButton = () => {
+    if (window.innerWidth <= 960) {
+      setButton(false);
+    } else {
+      setButton(true);
+    }
+  };
 
-    window.addEventListener("resize", showButton);
+  window.addEventListener("resize", showButton);
+  useEffect(() => {
+    showButton();
     return () => {
       window.removeEventListener("resize", showButton);
     };
@@ -31,20 +32,19 @@ const Navbar = () => {
         <div className="navbar-container container">
           {/* flex-1 */}
           <Link to="/" className="navbar-logo" onClick={closeMenuHandler}>
-          <FaEarlybirds className="fa fa-Earlybirds" />
+            <FaEarlybirds className="fa fa-Earlybirds" />
             CREATE1666
-           
           </Link>
           {/* flex-2 */}
           <div className="menu-icon" onClick={handleClickNavMenuIcon}>
-            {click ? <FaTimes className="fa-times"/> : <FaBars />}
+            {click ? <FaTimes className="fa-times" /> : <FaBars />}
           </div>
           {/* flex-3 */}{" "}
-               <div>
-            <ul className={!click ? "nav-menu" :"nav-menu active" }>
+          <div>
+            <ul className={!click ? "nav-menu" : "nav-menu active"}>
               {/* ---children lists Starts here-- */}
               <li className="nav-item">
-                <Link to="/services" className="nav-links">
+                <Link to="/home" className="nav-links">
                   Home
                 </Link>
               </li>
@@ -56,12 +56,12 @@ const Navbar = () => {
               </li>
 
               <li className="nav-item">
-                <Link to="/services" className="nav-links">
+                <Link to="/products " className="nav-links">
                   Products
                 </Link>
               </li>
 
-              <li className="nav-btn">
+              <li className="btn">
                 {button ? (
                   <Link to="/sign-up" className="btn-link">
                     <Button buttonStyle="btn--outline"> SIGN UP </Button>
@@ -76,7 +76,7 @@ const Navbar = () => {
                 )}
               </li>
             </ul>
-            </div>
+          </div>
         </div>
       </div>
     </>
