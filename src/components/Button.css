@@ -18,7 +18,7 @@
 }
 
 .btn--outline {
-  background-color: #242424;
+  background-color: #6c63ff;
   color: var(--primary);
   border: 1px solid var(--primary);
   transition: all 0.3s ease-out;
@@ -41,7 +41,7 @@
     text-decoration: none;
     font-size: .6rem;
     color: var(--primary);
-    background-color: transparent;
+    /* background-color: transparent; */
     padding: 14px 30px;
     border: 1px solid #fff;
     transition: all 0.3s ease-in-out;
@@ -52,6 +52,11 @@
 }
 
 .btn--wide {
-  padding: 12px 64px;
+  padding: 12px 84px;
   font-size: 20px;
+  background-color: aqua;
+}
+
+.blue {
+  background: linear-gradient(70deg, #6c63ff 0%, #c0bdf7 100%);
 }

@@ -29,7 +29,7 @@ const Navbar = () => {
   return (
     <>
       <div className="navbar">
-        <div className="navbar-container container">
+        <div className="navbar-container ">
           {/* flex-1 */}
           <Link to="/" className="navbar-logo" onClick={closeMenuHandler}>
             <FaEarlybirds className="fa fa-Earlybirds" />
@@ -44,7 +44,7 @@ const Navbar = () => {
             <ul className={!click ? "nav-menu" : "nav-menu active"}>
               {/* ---children lists Starts here-- */}
               <li className="nav-item">
-                <Link to="/home" className="nav-links">
+                <Link to="/" className="nav-links">
                   Home
                 </Link>
               </li>

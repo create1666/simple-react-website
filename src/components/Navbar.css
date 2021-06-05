@@ -5,8 +5,8 @@
 .navbar {
   background: linear-gradient(
     70deg,
-    rgb(25, 151, 173) 0%,
-    rgb(136, 27, 146) 100%
+    #2f2e41 0%,
+     #3f3d56 100%
   );
   height: 80px;
   position: sticky;
