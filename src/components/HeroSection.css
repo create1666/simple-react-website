@@ -1,5 +1,5 @@
 .home__hero-section {
-  color: #f7f8fa;
+  /* color: #f7f8fa; */
   margin: 164px 0;
 }
 
@@ -59,18 +59,24 @@
 .dark {
   color: #1c2237;
 }
+
+
 .darkBg {
   background-color: #1c2237;
   /* color: #fff; */
   /* padding: 164px 0; */
 }
 
+/* .home__hero-subtitle.dark {
+  color: #1c2237;
+} */
+
 .home__hero-subtitle {
   line-height: 24px;
   max-width: 440px;
   font-size: 18px;
   margin-bottom: 35px;
-  color: #f7f8fa;
+  color: #143f94;
   padding: 0;
 }
 

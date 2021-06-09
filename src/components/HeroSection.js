@@ -43,7 +43,7 @@ const HeroSection = ({
                   className={
                     lightTextDesc
                       ? "home__hero-subtitle"
-                      : "home__hero-subtitle dark"
+                      : " home__hero-subtitle dark"
                   }
                 >
                   {description}
