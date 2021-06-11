@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "./Button";
-import { Link ,} from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./HeroSection.css";
 
 const HeroSection = ({
@@ -15,11 +15,9 @@ const HeroSection = ({
   alt,
   imgStart,
 }) => {
-
   // const [ lightBg, setlightbg] =  useState(true)
-  //    if(!true) {setlightbg(false)} 
-      
-     
+  //    if(!true) {setlightbg(false)}
+
   return (
     <>
       <div
@@ -27,13 +25,9 @@ const HeroSection = ({
       >
         <div className="container">
           <div
-            className="row home__hero-row"
-            style={{
-              display: "flex",
-              flexDirection: imgStart === "start" ? "row-reverse" : "row",
-            }}
-          >
-            <div className="col col-1">
+            className={`row home__hero-row ${imgStart && 'hello' }`}
+           >
+            <div className="col">
               <div className="home__hero-text-wrapper">
                 <div className="top-line">{topLine}</div>
                 <h1 className={lightText ? "heading" : "heading dark"}>
@@ -56,7 +50,7 @@ const HeroSection = ({
               </div>
             </div>
 
-            <div className="col col-2">
+            <div className="col">
               <div className="home__hero-img-wrapper">
                 <img src={img} alt={alt} className="home__hero-img" />
               </div>
