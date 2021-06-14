@@ -80,6 +80,13 @@
 
   }
 
+  .nav-menu.active {
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+    transform: translateX(0);
+  }
+
   .nav-links{
     display: flex;
     justify-content:center ;
@@ -106,12 +113,7 @@
     margin: .1rem auto;
     
   }
-  .nav-menu.active {
-    opacity: 1;
-    transition: all 0.5s ease;
-    z-index: 1;
-    transform: translateX(0);
-  }
+
 
   .navbar-logo {
     position: absolute;

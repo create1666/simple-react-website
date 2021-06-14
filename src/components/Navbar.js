@@ -41,7 +41,7 @@ const Navbar = () => {
           </div>
           {/* flex-3 */}{" "}
           <div>
-            <ul className={!click ? "nav-menu" : "nav-menu active"}>
+            <ul className={click ? "nav-menu active" : "nav-menu"}>
               {/* ---children lists Starts here-- */}
               <li className="nav-item">
                 <Link to="/" className="nav-links">

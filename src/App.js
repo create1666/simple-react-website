@@ -3,6 +3,7 @@ import Navbar from "../src/components/Navbar";
 import "./App.css";
 import Footer from "./components/pages/Footer/Footer";
 import Home from "./components/pages/HomePage/Home"
+import Pricing from "./components/Pricing";
 
 
 
@@ -13,6 +14,7 @@ const App = () => {
         <Navbar />
         <Switch>
           <Route exact path="/">{Home}</Route>
+          <Route  path="/sign-up">{Pricing}</Route>
         </Switch>
         <Footer/>
       </Router>
