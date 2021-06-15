@@ -65,32 +65,32 @@ const Footer = () => {
           <div className="companyInfo_container">
             <div className="col-link-items">
               <h2>About</h2>
-              <a href="/" className="btn-link">
+              <a href="https://github.com/create1666" className="btn-link">
                 How it works
               </a>
-              <a href="/" className="btn-link">
+              <a href="https://github.com/create1666" className="btn-link">
                 Testimonials
               </a>
-              <a href="/" className="btn-link">
+              <a href="https://github.com/create1666" className="btn-link">
                 career
               </a>
-              <a href="/" className="btn-link">
+              <a href="https://github.com/create1666" className="btn-link">
                 Terms and Services
               </a>
             </div>
 
             <div className="col-link-items">
               <h2>Contact Us</h2>
-              <a href="/" className="btn-link">
+              <a href="https://github.com/create1666" className="btn-link">
                 Contact
               </a>
-              <a href="/" className="btn-link">
+              <a href="https://github.com/create1666" className="btn-link">
                 Support
               </a>
-              <a href="/" className="btn-link">
+              <a href="https://github.com/create1666" className="btn-link">
                 Destination
               </a>
-              <a href="/" className="btn-link">
+              <a href="https://github.com/create1666" className="btn-link">
                 Sponsorships
               </a>
             </div>
@@ -98,29 +98,29 @@ const Footer = () => {
           <div className="companyInfo_container">
             <div className="col-link-items">
               <h2>Videos</h2>
-              <a href="/" className="btn-link">
+              <a href="https://github.com/create1666" className="btn-link">
                 Videos
               </a>
-              <a href="/" className="btn-link">
+              <a href="https://github.com/create1666" className="btn-link">
                 Agency
               </a>
-              <a href="/" className="btn-link">
+              <a href="https://github.com/create1666" className="btn-link">
                 Ambassador
               </a>
-              <a href="/" className="btn-link">
+              <a href="https://github.com/create1666" className="btn-link">
                 Influencer
               </a>
             </div>
 
             <div className="col-link-items">
               <h2>Social Media</h2>
-              <a href="/" className="btn-link">
+              <a href="https://github.com/create1666" className="btn-link">
                 Instagram
               </a>
-              <a href="/" className="btn-link">
+              <a href="https://github.com/create1666" className="btn-link">
                 Facebook
               </a>
-              <a href="/" className="btn-link">
+              <a href="https://github.com/create1666" className="btn-link">
                 Twitter
               </a>
               <a href='https://github.com/create1666' className="btn-link">
