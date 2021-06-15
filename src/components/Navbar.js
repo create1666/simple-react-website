@@ -41,33 +41,33 @@ const Navbar = () => {
           </div>
           {/* flex-3 */}{" "}
           <div>
-            <ul className={!click ? "nav-menu" : "nav-menu active"}>
+            <ul className={click ? "nav-menu active" : "nav-menu"}>
               {/* ---children lists Starts here-- */}
               <li className="nav-item">
-                <Link to="/" className="nav-links">
+                <Link to="/" className="nav-links" onClick={closeMenuHandler}>
                   Home
                 </Link>
               </li>
 
               <li className="nav-item">
-                <Link to="/services" className="nav-links">
+                <Link to="/services" className="nav-links" onClick={closeMenuHandler}>
                   Services
                 </Link>
               </li>
 
               <li className="nav-item">
-                <Link to="/products " className="nav-links">
+                <Link to="/products " className="nav-links" onClick={closeMenuHandler}>
                   Products
                 </Link>
               </li>
 
               <li className="btn">
                 {button ? (
-                  <Link to="/sign-up" className="btn-link">
+                  <Link to="/sign-up" className="btn-link" onClick={closeMenuHandler}>
                     <Button buttonStyle="btn--outline"> SIGN UP </Button>
                   </Link>
                 ) : (
-                  <Link to="/sign-up" className="btn-link">
+                  <Link to="/sign-up" className="btn-link" onClick={closeMenuHandler}>
                     <Button buttonStyle="btn--outline" buttonSize="btn--mobile">
                       {" "}
                       SIGN UP{" "}

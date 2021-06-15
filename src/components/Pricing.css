@@ -1,0 +1,123 @@
+.pricing__section {
+  display: flex;
+  justify-content: center;
+  background: cornsilk;
+}
+
+.pricing__wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 1900px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.pricing__heading {
+  font-size: 34px;
+  margin-right: 830px;
+  /* background: coral; */
+}
+
+.pricing__container {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  /* background: darkblue; */
+}
+
+.pricing__container-card {
+  text-decoration: none;
+  background: #f6f7fa;
+  margin: 0 20px;
+  height: 500px;
+  width: 280px;
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 2px 1.5px rgba(0, 0, 0, 0.2);
+}
+
+.pricing__container-card:nth-child(2) {
+  transform: scale(1.05);
+  margin: 0 24px;
+  color: #f6f7fa;
+  background: #2f2e41;
+}
+
+.pricing__container-card:hover {
+  transform: scale(1.06);
+  transition: all 0.3s ease-out;
+}
+
+.pricing__container-features {
+  list-style: none;
+}
+
+.pricing__container-cardinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+}
+
+.pricing__container-cardinfo .icon {
+  /* color: #f6f7fa; */
+  font-size: 30px;
+  margin-bottom: 34px;
+}
+
+.pricing__container-cardinfo h3 {
+  font-size: 14px;
+}
+
+.pricing__container-cardinfo h4 {
+  font-size: 44px;
+}
+
+.pricing__container-cardinfo p {
+  margin: 10px 0 20px;
+}
+
+.pricing__container-features {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 16px 0 32px;
+}
+
+.pricing__container-features li {
+  margin-bottom: 18px;
+}
+
+@media only screen and (max-width: 999px){
+
+  .pricing__heading{
+    margin: auto auto;
+  }
+  .pricing__container {
+    flex-direction: column;
+   
+  }
+
+  .pricing__container-card {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    text-align: center;
+   
+  }
+
+  .pricing__container-card:nth-child(2) {
+    transform: none;
+    /* margin: 0 24px;
+    color: #f6f7fa;
+    background: #2f2e41; */
+    /* transition: all 0.3s ease-out; */
+
+  }
+
+  .pricing__container-card:hover {
+    transform: none;
+    /* transition: all 0.3s ease-out; */
+  }
+}
