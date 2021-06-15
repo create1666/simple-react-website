@@ -46,7 +46,15 @@
   justify-content: flex-end;
   padding: 3.5rem;
   font-size: 1.1rem;
+ 
 }
+
+.nav-menu .active{
+  transform: translateX(-100%);
+  transition: all 0.5s ease;
+}
+
+
 .nav-item{
   margin-right: 4.5rem;
 }
@@ -80,11 +88,12 @@
 
   }
 
-  .nav-menu.active {
+.active {
     opacity: 1;
     transition: all 0.5s ease;
     z-index: 1;
     transform: translateX(0);
+    background: #3628ce;
   }
 
   .nav-links{
